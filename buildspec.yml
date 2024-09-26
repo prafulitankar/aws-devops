@@ -17,6 +17,6 @@ phases:
       - echo Configuring NGINX
 
   artifacts:
-    files:
+    build:
       - /var/www/html/index.html
       
