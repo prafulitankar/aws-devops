@@ -16,7 +16,13 @@ phases:
     commands:
       - echo Configuring NGINX
 
-  build:
+  # build:
+  #   files:
+  #     - /var/www/html/index.html
+
+  artifacts:
     files:
-      - /var/www/html/index.html
+      - /var/www/html/index.html           # Specify the files or directories to include
+  discard-paths: yes                       # Optional: Discard the base path for cleaner artifact storage
+  base-directory: test-app-artifact        # Optional: Specify a base directory for the artifacts
       
