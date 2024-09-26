@@ -11,6 +11,9 @@ phases:
     commands:
       - echo Build Started on `date`
       - cp index.html /var/www/html/
+      - cp -rav assets /var/www/html/
+      - cp -rav error /var/www/html/
+      - cp -rav images /var/www/html/
 
   post_build:
     commands:
