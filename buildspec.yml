@@ -14,6 +14,8 @@ phases:
       - cp -rav assets /var/www/html/
       - cp -rav error /var/www/html/
       - cp -rav images /var/www/html/
+      - cp -rav appspec.yml /var/www/html
+      - cp -rav scripts /var/www/html/
 
   post_build:
     commands:
@@ -25,4 +27,6 @@ artifacts:
     - /var/www/html/assets/**/* 
     - /var/www/html/error/**/*
     - /var/www/html/images/**/* 
+    - /var/www/html/appspec.yml
+    - /var/www/html/scripts/**/*
     
