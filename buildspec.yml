@@ -24,11 +24,11 @@ phases:
 
 artifacts:
   files:
-    # - /var/www/html/index.html
-    # - /var/www/html/assets/**/* 
-    # - /var/www/html/error/**/*
-    # - /var/www/html/images/**/* 
-    # - /var/www/html/appspec.yml
-    # - /var/www/html/scripts/**/*
-    - '**/*'
+    - /var/www/html/index.html
+    - /var/www/html/assets/**/* 
+    - /var/www/html/error/**/*
+    - /var/www/html/images/**/* 
+    - /var/www/html/appspec.yml
+    - /var/www/html/scripts/**/*
+    # - '**/*'
     
